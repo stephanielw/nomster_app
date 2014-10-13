@@ -18,14 +18,21 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	    </buttion>
-	    <a class="navbar-brand" href="#">Foodie</a>
+	    
+	    <%= link_to 'Foodie', root_path, :class => 'navbar-brand' %>
 
 	</div>
 	<!--collect the nav links, forms, and other contect for toggling -->
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	
 	<ul class="nav navbar-nav">
-	<li ><a href="#">Link</a></li>
+	
+	<li>
+		<%= link_to  new_place_path do%>
+		<i class="glyphicon glyphicon-plus-sign"></i>
+		New Place
+		<% end %>
+	</li>
 	
 	</ul>
 	
