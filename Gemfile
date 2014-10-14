@@ -13,6 +13,8 @@ gem 'bootstrap-sass','~>3.2.0'
 
 gem 'simple_form'
 
+gem 'devise', '>=3.2.4'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
