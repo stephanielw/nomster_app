@@ -46,7 +46,7 @@
   </a>
 </div>
 <% @places.each do |place| %>
-	<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<div class="booyah-box col-xs-8 col-xs-offset-2">
 	 	<h1><%=link_to place.name, place_path(place)%></h1><br />
 	 	<i><%= place.address %></i><br />
 	 	<p><%= place.description %></p><br />
@@ -56,7 +56,7 @@
  	
  	
 	<% if place.comments.present? %>
-	  <div class="col-xs-12">
+	  <div class="col-xs-10">
 	    <blockquote>
 	      <% if place.comments.last.humanized_rating.present? %>
 	        <b><%= place.comments.last.humanized_rating %></b> -

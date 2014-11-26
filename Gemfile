@@ -5,6 +5,8 @@ gem 'rails', '4.0.1'
 
 gem 'will_paginate'
 
+gem 'carrierwave'
+
 
 # Use postgresql as the database for Active Record
 gem 'geocoder'
