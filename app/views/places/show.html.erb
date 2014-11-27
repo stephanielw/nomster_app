@@ -3,7 +3,7 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <p><%= @place.description %></p>
-  <br/>
+  <
  
   
 
@@ -111,34 +111,36 @@
 
 
   
-  
-   <div class="col-xs-10 col-xs-offset-1">
-   <h1 class="pull-left"> Comments </h1>
+<h1 class="pull-left"> Comments </h1>
+<div class="col-xs-8 col-xs-offset-2">
+   
    <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
       Add a comment
-      </button>
+    </button>
       
 
-       <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal2">
+    <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal2">
       Add a photo
-      </button>
+    </button>
       
   </div>
 
- <div class="booyah-box col-xs-8 col-xs-offset-1">
+ <div class="booyah-box col-xs-8 col-xs-offset-2">
   <h2> Photos </h2>
     <% @place.photos.each do |p| %>
       <div class = "col-xs-6 show-image">
       <%= image_tag p.picture %>
       <br/>
       <%= p.caption %>
+       <%end%>
       
-  </div>
-  <%end%>
+ </div>
+ </div>
+<div class="clear"></div>  
   
       
      
-  <div class="clear"></div>  
+
   
   <% @place.comments.each do |comment|%>
     <div class="col-xs-12 col-sm-6">

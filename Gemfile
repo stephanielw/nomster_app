@@ -7,6 +7,8 @@ gem 'will_paginate'
 
 gem 'carrierwave'
 
+gem "fog", "~>1.3.1"
+
 
 # Use postgresql as the database for Active Record
 gem 'geocoder'
